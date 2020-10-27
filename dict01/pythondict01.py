@@ -7,11 +7,6 @@ switch = {"hostname": "sw1", "ip": "10.0.1.1", "version": "1.2", "vendor": "cisc
 print( switch["hostname"] )
 print( switch["ip"] )
 
-## request a 'fake' key
-# print( switch["lynx"] )   # Be sure to comment out this line,
-                            # or your program will CONTINUE to fail!
-                            # if a KEY is requested that does not exist,
-                            # an ERROR will be thrown!
 
 ## request a 'fake' key with .get() method
 print( "First test - .get()" )
