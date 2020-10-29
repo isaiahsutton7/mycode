@@ -13,11 +13,16 @@ def equation(x,y):
         print(x*y)
     elif sym== "/":
         print(x/y)
-
 def main():
-    num1= float(input("What is your first number? "))
-    num2= float(input("What is your second number? "))
+    try:
+        num1= float(input("What is your first number? "))
+        num2= float(input("What is your second number? "))
     
-    equation(num1,num2) #call function to sub x,y with user input
-
+        equation(num1,num2) #call function to sub x,y with user input
+    except ValueError:
+        print("Please enter your number as a digit.")
+        main()
+    except:
+        print("How did you do this?")
+        main()
 main()
